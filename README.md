@@ -2,6 +2,10 @@
 
 A small Spanish-learning app built around bite-sized lessons, streaks, and the satisfaction of getting one more answer right.
 
+🚀 **Give Onelingo a try:** https://onelingo-hazel.vercel.app/
+
+No sign-up needed! Jump in, explore the learning path, try a lesson, challenge yourself with a Boss Battle, or head to the Practice Arena and earn some extra XP. 🐣
+
 **Onelingo was built as part of a 24-hour full-stack take-home assignment.** The goal was to turn a simple language-learning idea into a working application, covering the UI, backend APIs, database, and learning-progress flows within a limited timeframe.
 
 Inspired by the learning path and gamification mechanics of apps like Duolingo, Onelingo lets learners practise Spanish through short interactive exercises, earn XP, track their progress, and revisit mistakes along the way.
