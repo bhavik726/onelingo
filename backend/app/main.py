@@ -1,4 +1,5 @@
 import json
+import os
 from contextlib import asynccontextmanager
 from datetime import date, timedelta
 
@@ -40,9 +41,16 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="Lingo Learning API", version="0.4.0", lifespan=lifespan)
+cors_origins = [
+    origin.strip()
+    for origin in os.getenv(
+        "CORS_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000"
+    ).split(",")
+    if origin.strip()
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

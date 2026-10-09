@@ -285,7 +285,7 @@ export default function LessonPage() {
         {!isChoice && !isWordBank && !isMatching && <div className="space-y-3">
           <label htmlFor="answer" className="text-sm font-bold text-gray-500">Your answer</label>
           <input id="answer" value={answer} onChange={(e) => setAnswer(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter" && canCheck) void checkAnswer(); }} disabled={!!feedback} placeholder="Type your answer…" autoComplete="off" className="w-full rounded-xl border-2 border-gray-200 px-4 py-4 text-lg font-bold outline-none focus:border-duo-blue disabled:bg-gray-50"/>
-          <p className="text-xs text-gray-400">Capitalization and extra spaces don't matter.</p>
+          <p className="text-xs text-gray-400">Capitalization and extra spaces don&apos;t matter.</p>
         </div>}
       </div>
 
