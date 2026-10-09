@@ -164,9 +164,10 @@ def seed_database(connection: sqlite3.Connection) -> None:
     """Idempotent seed: add missing content but never reset existing learner progress."""
     connection.execute(
         """
-        INSERT OR IGNORE INTO learners
+        INSERT INTO learners
             (id, display_name, total_xp, streak_days, hearts, gems)
         VALUES (1, 'Alex Rivera', 0, 0, 5, 500)
+        ON CONFLICT(id) DO UPDATE SET display_name = 'Bhavik Goyal'
         """
     )
     connection.execute(
