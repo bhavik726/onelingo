@@ -7,6 +7,7 @@ import {
   CheckCircle2, Circle, Star, Target, Sparkles,
 } from "lucide-react";
 import { api, CourseResponse, Skill } from "@/lib/api";
+import Image from "next/image";
 
 export default function HomePage() {
   const [data, setData] = useState<CourseResponse | null>(null);
@@ -36,7 +37,20 @@ export default function HomePage() {
   return <main className="min-h-screen bg-white">
     <header className="sticky top-0 z-10 border-b border-duo-line bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <Link href="/" className="text-2xl font-black tracking-tight text-duo-green">lingo<span className="text-duo-ink">.</span></Link>
+        <Link
+  href="/"
+  aria-label="Onelingo home"
+  className="flex items-center"
+>
+  <Image
+    src="/onelingo-logo.svg"
+    alt="Onelingo"
+    width={160}
+    height={55}
+    priority
+    className="h-11 w-auto object-contain"
+  />
+</Link>
         <nav className="hidden items-center gap-7 text-sm font-extrabold uppercase tracking-wide text-gray-500 md:flex">
           <a className="text-duo-green" href="#learn">Learn</a>
           <a href="#quests">Daily quests</a>

@@ -34,7 +34,7 @@ export default function BossesPage() {
       <header className="mt-5 overflow-hidden rounded-3xl border-2 border-[#ead9b8] bg-gradient-to-r from-[#fff0ce] via-[#fff8e9] to-[#fce6d4] p-6 sm:p-9">
         <div className="flex items-start gap-4">
           <div className="min-w-0 flex-1">
-            <span className="rounded-full bg-white/80 px-3 py-1 text-xs font-black uppercase tracking-widest text-amber-800">Lingo arena</span>
+            <span className="rounded-full bg-white/80 px-3 py-1 text-xs font-black uppercase tracking-widest text-amber-800">Onelingo arena</span>
             <h1 className="mt-4 text-3xl font-black text-[#372b1b] sm:text-4xl">Boss Battles</h1>
             <p className="mt-2 max-w-2xl leading-7 text-[#7a6242]">Ready for the harder questions? Choose a unit you have fully completed and take its five-question final challenge. Locked units open here when you finish their learning path.</p>
           </div>
