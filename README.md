@@ -51,7 +51,10 @@ The app starts with a seeded demo learner, so you can explore the learning exper
 - **Progress overview:** Review your course progress, learner stats, and achievements in one place.
 - **Practice history:** Check recorded sprint results and personal records.
 - **Persistent demo progress:** Your learning state is stored in SQLite and can survive page refreshes and backend restarts when the database file is retained.
-
+<img width="1885" height="867" alt="image" src="https://github.com/user-attachments/assets/26b263b1-cec6-4022-900b-0170320fb0bf" />
+<img width="1873" height="866" alt="image" src="https://github.com/user-attachments/assets/77a8f083-619b-43d7-958b-cf6365a8e633" />
+<img width="1442" height="648" alt="image" src="https://github.com/user-attachments/assets/aed07a80-b0ef-4da1-a059-b7c62bde794a" />
+<img width="1377" height="867" alt="image" src="https://github.com/user-attachments/assets/7941c7f5-4c73-43f4-8b79-04bca23f9064" />
 
 
 ## 🛠️ Tech Stack
